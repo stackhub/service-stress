@@ -17,7 +17,7 @@ the container thus:
 ```
 docker run \
     --env CONTAINER_COUNT=1 \
-    behemphi/stress \
+    stackhub/stress \
         --help
 ```
 
@@ -31,7 +31,7 @@ container:
 docker run \
     --detach \
     --env CONTAINER_COUNT=1 \
-    behemphi/stress \
+    stackhub/stress \
         --cpu 1 --io 1 --vm 2 --vm-bytes 16M --timeout 10s
 ```
 
@@ -47,7 +47,7 @@ docker run \
     --privileged \
     --volume /usr/local/bin/docker:/docker \
     --volume /var/run/docker.sock:/var/run/docker.sock \
-    behemphi/stress \
+    stackhub/stress \
         --cpu 1 --io 1 --vm 2 --vm-bytes 8M --timeout 100s
 ```
 
